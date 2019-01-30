@@ -12,3 +12,4 @@ var countNodes = function (node) {
   }
   return count;
 }
+

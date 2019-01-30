@@ -6,8 +6,10 @@ router.get('/', async (ctx, next) => {
   })
 })
 
-router.get('/string', async (ctx, next) => {
-  ctx.body = 'koa2 string'
+router.get('/test', async (ctx, next) => {
+  await ctx.render('test', {
+    title: 'Hello Koa 2!'
+  })
 })
 
 router.get('/json', async (ctx, next) => {
